@@ -103,6 +103,7 @@
     wget
     git
 	opam
+	gcc
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
