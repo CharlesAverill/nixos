@@ -105,6 +105,8 @@
 	opam
 	gcc
 	gnumake
+	gmp
+	pkg-config
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
