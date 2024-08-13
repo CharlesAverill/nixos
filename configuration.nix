@@ -14,7 +14,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "anesidora"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -134,4 +134,10 @@
   nix.extraOptions = ''
     experimental-features = nix-command flakes
   '';
+
+	security.sudo.extraRules = [
+ 		{ users = [ "charles" ];
+	  	  commands = [ { command = "ALL"; options = [ "NOPASSWD"  ]; } ];
+		}
+	];
 }
