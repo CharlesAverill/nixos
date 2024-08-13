@@ -102,6 +102,7 @@
     (import ./vim.nix)
     wget
     git
+	opam
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
