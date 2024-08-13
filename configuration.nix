@@ -107,6 +107,7 @@
 	gnumake
 	gmp
 	pkg-config
+	pkgs.discord
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
