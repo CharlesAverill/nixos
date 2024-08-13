@@ -105,10 +105,12 @@
 	opam
 	gcc
 	gnumake
-	gmp
+	pkgs.gmp
 	pkg-config
 	pkgs.discord
 	vscode
+	killall
+	espeak
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
