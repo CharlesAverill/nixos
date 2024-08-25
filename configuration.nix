@@ -112,6 +112,7 @@
 	killall
 	espeak
 	python3
+	pandoc
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
