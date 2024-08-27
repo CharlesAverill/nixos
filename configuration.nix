@@ -113,6 +113,7 @@
 	espeak
 	python3
 	pandoc
+	ghidra
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
