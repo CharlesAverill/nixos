@@ -154,11 +154,11 @@
 	];
 
 	programs.ssh.extraConfig = ''
-		Host pubssh.utdallas.edu
+		Host *.utdallas.edu
 			User mca190001
 
-		Host *.utdallas.edu !pubssh.utdallas.edu
-			User mca190001
-			ProxyJump pubssh.utdallas.edu
+		Match exec 'ip addr show | grep 10.169.169'
+			Host *.utdallas.edu !pubssh.utdallas.edu
+				ProxyJump pubssh.utdallas.edu
   	'';
 }
