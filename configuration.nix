@@ -152,4 +152,10 @@
 	  	  commands = [ { command = "ALL"; options = [ "NOPASSWD"  ]; } ];
 		}
 	];
+
+	programs.ssh.extraConfig = ''
+		Host *.example.com
+			User exampleuser
+			ProxyJump pubssh.utdallas.edu
+  	'';
 }
