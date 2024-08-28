@@ -157,7 +157,7 @@
 		Host *.utdallas.edu
 			User mca190001
 		
-		Match exec "ip addr show | grep 10.169.169 -qF || exit 1"
+		Match exec "ip addr show | grep 10.169.169 -qF && exit 1"
 			Host *.utdallas.edu !pubssh.utdallas.edu
 				ProxyJump pubssh.utdallas.edu
   	'';
