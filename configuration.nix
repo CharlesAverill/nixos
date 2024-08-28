@@ -157,7 +157,7 @@
 		Host pubssh.utdallas.edu
 			User mca190001
 
-		Host *.utdallas.edu
+		Host *.utdallas.edu !pubssh.utdallas.edu
 			User mca190001
 			ProxyJump pubssh.utdallas.edu
   	'';
