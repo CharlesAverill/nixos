@@ -156,8 +156,8 @@
 	programs.ssh.extraConfig = ''
 		Host *.utdallas.edu
 			User mca190001
-
-		Match exec "ip addr show | grep 10.169.169 -qF"
+		
+		Match exec "ip addr show | grep 10.169.169 -qF || exit 0"
 			Host *.utdallas.edu !pubssh.utdallas.edu
 				ProxyJump pubssh.utdallas.edu
   	'';
