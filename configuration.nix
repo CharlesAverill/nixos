@@ -154,6 +154,9 @@
 	];
 
 	programs.ssh.extraConfig = ''
+		Host pubssh.utdallas.edu
+			User mca190001
+
 		Host *.utdallas.edu
 			User mca190001
 			ProxyJump pubssh.utdallas.edu
