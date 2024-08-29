@@ -114,11 +114,7 @@
 	python3
 	pandoc
 	ghidra
-	kdePackages.pimcommon
-	kdePackages.merkuro
-	akonadi
-	kdePackages.kdepim-addons
-	kdePackages.kdepim-runtime
+	thunderbird
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
