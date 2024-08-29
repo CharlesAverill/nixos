@@ -115,6 +115,9 @@
 	pandoc
 	ghidra
 	kdePackages.pimcommon
+	korganizer
+	akonadi
+	# kdepim-addons
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
