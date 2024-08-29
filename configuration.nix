@@ -117,7 +117,7 @@
 	kdePackages.pimcommon
 	korganizer
 	akonadi
-	# kdepim-addons
+	kdePackages.kdepim-addons
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
