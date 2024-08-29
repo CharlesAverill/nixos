@@ -115,7 +115,7 @@
 	pandoc
 	ghidra
 	kdePackages.pimcommon
-	korganizer
+	kdePackages.merkuro
 	akonadi
 	kdePackages.kdepim-addons
 	kdePackages.kdepim-runtime
