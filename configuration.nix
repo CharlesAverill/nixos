@@ -114,6 +114,7 @@
 	python3
 	pandoc
 	ghidra
+	kdePackages.pimcommon
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
