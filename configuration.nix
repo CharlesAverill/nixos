@@ -118,6 +118,7 @@
 	korganizer
 	akonadi
 	kdePackages.kdepim-addons
+	kdePackages.kdepim-runtime
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
