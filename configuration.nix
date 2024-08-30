@@ -114,7 +114,8 @@
 	python3
 	pandoc
 	ghidra
-	thunderbird
+	gmp
+	zlib
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
