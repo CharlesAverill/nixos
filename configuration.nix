@@ -117,6 +117,7 @@
 	gmp
 	zlib
 	openblas
+	bubblewrap
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
