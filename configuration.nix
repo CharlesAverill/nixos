@@ -118,6 +118,7 @@
 	zlib
 	openblas
 	bubblewrap
+	pkg-config
 	blas
 	ncurses
   ];
