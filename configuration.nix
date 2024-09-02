@@ -4,6 +4,12 @@
 
 { config, pkgs, ... }:
 
+let pythonPackages = with pkgs; [
+	python3
+	poetry
+	python311Packages.blessed
+]; in
+
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -111,7 +117,6 @@
 	vscode
 	killall
 	espeak
-	python3
 	pandoc
 	ghidra
 	gmp
@@ -121,7 +126,7 @@
 	pkg-config
 	blas
 	ncurses
-  ];
+  ] ++ pythonPackages ;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
