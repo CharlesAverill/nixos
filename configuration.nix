@@ -128,7 +128,10 @@ let pythonPackages = with pkgs; [
 	ncurses
   ] ++ pythonPackages ;
 
-  environment.variables.PATH = "${pkgs.gmp}/include:$PATH";
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+	gmp
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
