@@ -128,6 +128,8 @@ let pythonPackages = with pkgs; [
 	ncurses
   ] ++ pythonPackages ;
 
+  environment.variables.PATH = "${pkgs.gmp}/include:$PATH";
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
