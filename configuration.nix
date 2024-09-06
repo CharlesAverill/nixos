@@ -119,6 +119,7 @@ let pythonPackages = with pkgs; [
 	pandoc
 	ghidra
 	gmp
+	gmp.dev
 	zlib
 	openblas
 	bubblewrap
