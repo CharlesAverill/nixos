@@ -126,6 +126,7 @@ let pythonPackages = with pkgs; [
 	pkg-config
 	blas
 	ncurses
+	obs-studio
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
