@@ -129,6 +129,7 @@ let pythonPackages = with pkgs; [
 	ncurses
 	obs-studio
 	docker
+	openvpn
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
