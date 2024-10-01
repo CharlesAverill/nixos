@@ -130,6 +130,7 @@ let pythonPackages = with pkgs; [
 	obs-studio
 	docker
 	openvpn
+	xscreensaver
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
@@ -138,6 +139,14 @@ let pythonPackages = with pkgs; [
   ];
 
   virtualisation.docker.enable = true;
+
+  services.xscreensaver = {
+	enable = true;
+	#settings = {
+	#  timeout = 1;
+	#  mode = "blank";
+    #};
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
