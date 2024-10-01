@@ -10,8 +10,6 @@ let pythonPackages = with pkgs; [
 	pwntools
 ]; in
 
-let xs_cfg = config.services.xscreensaver; in
-
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -132,7 +130,6 @@ let xs_cfg = config.services.xscreensaver; in
 	obs-studio
 	docker
 	openvpn
-	xscreensaver
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
@@ -142,14 +139,6 @@ let xs_cfg = config.services.xscreensaver; in
 
   virtualisation.docker.enable = true;
 
-  services.xscreensaver = {
-	enable = true;
-	#settings = {
-	#  timeout = 1;
-	#  mode = "blank";
-    #};
-  };
-
   security.wrappers.xscreensaver-auth = {
       setuid = true;
       owner = "root";
@@ -157,16 +146,6 @@ let xs_cfg = config.services.xscreensaver; in
       source = "${pkgs.xscreensaver}/libexec/xscreensaver/xscreensaver-auth";
   };
   
-  systemd.user.services.xscreensaver = {
-      enable = true;
-      description = "XScreenSaver";
-      after = [ "graphical-session-pre.target" ];
-      partOf = [ "graphical-session.target" ];
-      wantedBy = [ "graphical-session.target" ];
-      path = [ xs_cfg.package ];
-      serviceConfig.ExecStart = "${xs_cfg.package}/bin/xscreensaver -no-splash";
-  };
-
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
