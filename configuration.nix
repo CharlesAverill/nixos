@@ -10,6 +10,8 @@ let pythonPackages = with pkgs; [
 	pwntools
 ]; in
 
+let xs_cfg = config.services.xscreensaver; in
+
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -146,6 +148,23 @@ let pythonPackages = with pkgs; [
 	#  timeout = 1;
 	#  mode = "blank";
     #};
+  };
+
+  security.wrappers.xscreensaver-auth = {
+      setuid = true;
+      owner = "root";
+      group = "root";
+      source = "${pkgs.xscreensaver}/libexec/xscreensaver/xscreensaver-auth";
+  };
+  
+  systemd.user.services.xscreensaver = {
+      enable = true;
+      description = "XScreenSaver";
+      after = [ "graphical-session-pre.target" ];
+      partOf = [ "graphical-session.target" ];
+      wantedBy = [ "graphical-session.target" ];
+      path = [ xs_cfg.package ];
+      serviceConfig.ExecStart = "${xs_cfg.package}/bin/xscreensaver -no-splash";
   };
 
   # Some programs need SUID wrappers, can be configured further or are
