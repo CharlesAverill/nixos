@@ -130,6 +130,7 @@ let pythonPackages = with pkgs; [
 	obs-studio
 	docker
 	openvpn
+	ghc
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
