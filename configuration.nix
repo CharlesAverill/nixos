@@ -131,6 +131,7 @@ let pythonPackages = with pkgs; [
 	docker
 	openvpn
 	ghc
+	bsdgames
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
