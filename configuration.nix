@@ -132,6 +132,7 @@ let pythonPackages = with pkgs; [
 	openvpn
 	ghc
 	bsdgames
+	unzip
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
