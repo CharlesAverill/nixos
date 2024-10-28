@@ -133,6 +133,7 @@ let pythonPackages = with pkgs; [
 	ghc
 	bsdgames
 	unzip
+	libreoffice
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
