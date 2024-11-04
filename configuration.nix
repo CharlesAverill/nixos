@@ -132,8 +132,10 @@ let pythonPackages = with pkgs; [
 	openvpn
 	ghc
 	bsdgames
+	zip
 	unzip
 	libreoffice
+	spotify
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
