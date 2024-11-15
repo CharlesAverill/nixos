@@ -136,6 +136,7 @@ let pythonPackages = with pkgs; [
 	unzip
 	libreoffice
 	spotify
+	swiProlog
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
