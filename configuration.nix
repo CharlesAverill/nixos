@@ -137,6 +137,7 @@ let pythonPackages = with pkgs; [
 	libreoffice
 	spotify
 	swiProlog
+	zoom-us
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
