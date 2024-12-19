@@ -139,6 +139,7 @@ let pythonPackages = with pkgs; [
 	swiProlog
 	zoom-us
 	sqsh
+	freetds
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
@@ -204,5 +205,13 @@ let pythonPackages = with pkgs; [
 	services.mysql = {
 		enable = true;
 		package = pkgs.mariadb;
+	};
+
+	environment.freetds = { novitest1 = ''
+		host = novitest1.database.windows.net;
+		port = 1433;
+		tds version = 7.4;
+		encryption = required;
+		'';
 	};
 }
