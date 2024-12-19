@@ -138,6 +138,7 @@ let pythonPackages = with pkgs; [
 	spotify
 	swiProlog
 	zoom-us
+	sqsh
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
