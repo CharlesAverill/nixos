@@ -199,4 +199,9 @@ let pythonPackages = with pkgs; [
   		Host *%utdproxy
 			ProxyJump pubssh.utdallas.edu
 	'';
+
+	services.mysql = {
+		enable = true;
+		package = pkgs.mariadb;
+	};
 }
