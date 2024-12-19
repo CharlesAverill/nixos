@@ -210,7 +210,7 @@ let pythonPackages = with pkgs; [
 	environment.freetds = { novitest1 = ''
 		host = novitest1.database.windows.net
 		port = 1433
-		encryption = required
+		encryption = require
 		'';
 	};
 }
