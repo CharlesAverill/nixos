@@ -208,10 +208,10 @@ let pythonPackages = with pkgs; [
 	};
 
 	environment.freetds = { novitest1 = ''
-		host = novitest1.database.windows.net;
-		port = 1433;
-		tds version = 7.4;
-		encryption = required;
+		host = novitest1.database.windows.net
+		port = 1433
+		tds version = 7.4
+		encryption = required
 		'';
 	};
 }
