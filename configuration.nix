@@ -211,6 +211,7 @@ let pythonPackages = with pkgs; [
 		host = novitest1.database.windows.net
 		port = 1433
 		encryption = require
+		initial database = sqldb-novi-memberhealth-001
 		'';
 	};
 }
