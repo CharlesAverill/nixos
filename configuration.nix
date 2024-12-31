@@ -108,7 +108,7 @@ let pythonPackages = with pkgs; [
     (import ./vim.nix)
     wget
     git
-	opam
+	#opam
 	gcc
 	gnumake
 	pkgs.gmp
