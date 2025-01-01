@@ -8,9 +8,6 @@ let pythonPackages = with pkgs; [
 	python3
 	poetry
 	pwntools
-	python311Packages.numpy
-	python311Packages.matplotlib
-	python311Packages.pandas
 ]; in
 
 {
