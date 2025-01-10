@@ -140,6 +140,7 @@ let pythonPackages = with pkgs; [
 	zoom-us
 	sqsh
 	freetds
+	blender
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
@@ -205,13 +206,5 @@ let pythonPackages = with pkgs; [
 	services.mysql = {
 		enable = true;
 		package = pkgs.mariadb;
-	};
-
-	environment.freetds = { novitest1 = ''
-		host = novitest1.database.windows.net
-		port = 1433
-		encryption = require
-		database = sqldb-novi-memberhealth-001
-		'';
 	};
 }
