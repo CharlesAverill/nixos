@@ -141,6 +141,7 @@ let pythonPackages = with pkgs; [
 	sqsh
 	freetds
 	blender
+	signal-desktop
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
