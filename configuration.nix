@@ -141,7 +141,10 @@ let pythonPackages = with pkgs; [
 	sqsh
 	freetds
 	blender
-	signal-desktop
+	superTuxKart
+	shattered-pixel-dungeon
+	dwarf-fortress
+	libremines
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
