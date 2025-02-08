@@ -145,6 +145,7 @@ let pythonPackages = with pkgs; [
 	shattered-pixel-dungeon
 	dwarf-fortress
 	libremines
+	openvpn
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
