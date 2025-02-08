@@ -153,6 +153,8 @@ let pythonPackages = with pkgs; [
 	gmp
   ];
 
+  programs.openvpn3.enable = true;
+
   virtualisation.docker.enable = true;
 
   security.wrappers.xscreensaver-auth = {
