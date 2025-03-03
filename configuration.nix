@@ -221,6 +221,12 @@ let pythonPackages = with pkgs; [
 		
   		Host *%utdproxy
 			ProxyJump pubssh.utdallas.edu
+
+		Host *.dartmouth.edu
+			User caverill
+
+		Host crappleseed.dartmouth.edu
+			ProxyJump thepond.dartmouth.edu
 	'';
 
 	services.mysql = {
