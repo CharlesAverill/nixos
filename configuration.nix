@@ -225,8 +225,9 @@ let pythonPackages = with pkgs; [
 		Host *.dartmouth.edu
 			User caverill
 
-		Host crappleseed.dartmouth.edu
-			ProxyJump thepond.dartmouth.edu
+		Host crappleseed.cs.dartmouth.edu
+			User caverill
+			ProxyJump thepond.cs.dartmouth.edu
 	'';
 
 	services.mysql = {
