@@ -146,6 +146,7 @@ let pythonPackages = with pkgs; [
 	dwarf-fortress
 	libremines
 	openvpn3
+	imhex
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
