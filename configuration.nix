@@ -147,6 +147,7 @@ let pythonPackages = with pkgs; [
 	libremines
 	openvpn3
 	imhex
+	clang
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
