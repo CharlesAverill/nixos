@@ -148,6 +148,7 @@ let pythonPackages = with pkgs; [
 	openvpn3
 	imhex
 	clang
+	obsidian
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
