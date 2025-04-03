@@ -8,7 +8,9 @@ let pythonPackages = with pkgs; [
 	python3
 	pwntools
 ]; in
-
+let
+  unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
+in
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -148,7 +150,7 @@ let pythonPackages = with pkgs; [
 	imhex
 	clang
 	obsidian
-	poetry
+	unstable.poetry
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
