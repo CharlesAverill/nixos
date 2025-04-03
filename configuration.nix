@@ -7,7 +7,6 @@
 let pythonPackages = with pkgs; [
 	python3
 	pwntools
-	poetry
 ]; in
 
 {
@@ -149,6 +148,7 @@ let pythonPackages = with pkgs; [
 	imhex
 	clang
 	obsidian
+	poetry
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
