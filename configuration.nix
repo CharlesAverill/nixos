@@ -6,7 +6,6 @@
 
 let pythonPackages = with pkgs; [
 	python3
-	poetry
 	pwntools
 ]; in
 
