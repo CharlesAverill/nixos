@@ -233,6 +233,11 @@ in
 		Host crappleseed.cs.dartmouth.edu
 			User caverill
 			ProxyJump thepond.cs.dartmouth.edu
+
+Host texsaw-ctf
+        HostName 74.207.229.59
+        User charles9367
+        IdentityFile ~/.ssh/id_ed25519.pub
 	'';
 
 	services.mysql = {
