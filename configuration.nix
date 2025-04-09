@@ -237,7 +237,7 @@ in
 Host texsaw-ctf
         HostName 74.207.229.59
         User charles9367
-        IdentityFile ~/.ssh/id_ed25519.pub
+        IdentityFile ~/.ssh/id_ed25519
 	'';
 
 	services.mysql = {
