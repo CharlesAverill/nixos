@@ -244,4 +244,6 @@ Host texsaw-ctf
 		enable = true;
 		package = pkgs.mariadb;
 	};
+
+    hardware.opengl.enable = true;
 }
