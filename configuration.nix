@@ -246,4 +246,5 @@ Host texsaw-ctf
 	};
 
     hardware.opengl.enable = true;
+	hardware.opengl.extraPackages = [ pkgs.mesa.drivers ];
 }
