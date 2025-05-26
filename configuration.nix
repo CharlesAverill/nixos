@@ -151,6 +151,7 @@ in
 	clang
 	obsidian
 	unstable.poetry
+	glxinfo
   ] ++ pythonPackages ;
 
   programs.nix-ld.enable = true;
