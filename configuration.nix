@@ -248,4 +248,8 @@ Host texsaw-ctf
 
     hardware.opengl.enable = true;
 	hardware.opengl.extraPackages = [ pkgs.mesa.drivers ];
+
+	networking.extraHosts = ''
+		192.168.1.101 ipaq ipaq.localdomain
+	'';
 }
